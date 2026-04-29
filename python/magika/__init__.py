@@ -35,6 +35,10 @@ Batch usage:
     ...     print(r.path, r.output.ct_label)
 
 Note: Also exports MagikaError for convenient exception handling.
+
+Personal fork notes:
+    - Added MagikaResult and MagikaError to top-level imports for easier access
+    - See README for original upstream project: https://github.com/google/magika
 """
 
 from magika.magika import Magika
