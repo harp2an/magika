@@ -33,6 +33,8 @@ Batch usage:
     >>> results = m.identify_paths([Path("file1.py"), Path("file2.js")])
     >>> for r in results:
     ...     print(r.path, r.output.ct_label)
+
+Note: Also exports MagikaError for convenient exception handling.
 """
 
 from magika.magika import Magika
@@ -43,6 +45,7 @@ from magika.types import (
     ModelOutput,
     PredictionMode,
 )
+from magika.exceptions import MagikaError
 
 __version__ = "0.6.1"
 __author__ = "Google LLC"
@@ -55,5 +58,6 @@ __all__ = [
     "ModelFeatures",
     "ModelOutput",
     "PredictionMode",
+    "MagikaError",
     "__version__",
 ]
